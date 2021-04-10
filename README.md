@@ -35,3 +35,13 @@ my_smiles = c("OC(C)(C(CC(O)=O)CC(O)=O)C",
 
 purrr::map_dfr(.x = my_smiles, .f = chemdesr::read_full_chemdes, chatty = T)
 ```
+
+With a data frame of SMILES strings, one could reobtain the non-SMILE information through joining functions.
+
+```
+compounds = chemdesr::chem_smiles %>% head(3)
+
+comp_desc = map_dfr(.x = pull(compounds, smile), .f = chemdesr::read_full_chemdes, chatty = T)
+
+left_join(compounds, comp_desc) 
+```
