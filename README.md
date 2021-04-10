@@ -7,10 +7,13 @@ To install, type the below code into your R console:
 devtools::install_github('jack-davison/chemdesr')
 ```
 
-## Functions
+## Features
 There are two key functions in `chemdesr`:
 * `read_chemdes`: Provided a simplified molecular-input line-entry system ("SMILES") string and a specific descriptor (e.g. Chemopy, CDK, etc.), scrapes the ChemDes platform and returns a *wide* data frame of the relevant chemical information. 
 * `read_full_chemdes`: A wrapper around `read_chemdes` which automatically reads in Chemopy, CDK, RDKit, Pybel, and PaDEL data for a given *SMILES* string. There is an option to make this function "chatty" if you would like it to update you on its progress.
+
+There are also example data:
+* `chem_smiles`: A 42x2 dataframe containing 42 example compounds and their SMILES strings. Use this to practice with the `chemdesr` functions.
 
 ## Example Workflows
 It is very simple to scrape a single compound using `chemdesr`. Your workflow may look something like this:
