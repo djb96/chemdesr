@@ -5,7 +5,7 @@
 \alias{chem_smiles}
 \title{Example Compounds and Associated SMILES.}
 \format{
-A data frame with 53940 rows and 10 variables:
+A data frame with 42 rows and 2 variables:
 \describe{
 \item{compound_id}{Descriptive names of 42 chemical compounds.}
 \item{smile}{The corrsponding SMILES strings of the compounds.}
