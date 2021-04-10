@@ -4,10 +4,10 @@
 \alias{read_chemdes}
 \title{Read ChemDes}
 \usage{
-read_chemdes(smiles, desc = "chemopy")
+read_chemdes(smile, desc = "chemopy")
 }
 \arguments{
-\item{smiles}{A simplified molecular-input line-entry system ("SMILES") string.}
+\item{smile}{A simplified molecular-input line-entry system ("SMILES") string.}
 
 \item{desc}{The descriptors you wish to scrape. One of "Chemopy", "CDK", "RDKit", "Pybel", or "PaDEL" (not case sensitive).}
 }

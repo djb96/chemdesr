@@ -4,12 +4,12 @@
 \alias{read_full_chemdes}
 \title{Read Full ChemDes}
 \usage{
-read_full_chemdes(smiles, chatty = F)
+read_full_chemdes(smile, chatty = F)
 }
 \arguments{
-\item{chatty}{TRUE/FALSE. If TRUE, will print messages to the console updating you of the stage of scraping.}
+\item{smile}{A simplified molecular-input line-entry system ("SMILES") string.}
 
-\item{smiless}{A simplified molecular-input line-entry system ("SMILES") string.}
+\item{chatty}{TRUE/FALSE. If TRUE, will print messages to the console updating you of the stage of scraping.}
 }
 \value{
 A "wide" tibble of chemical information, labelled with the SMILES string.

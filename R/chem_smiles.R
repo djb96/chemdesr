@@ -5,6 +5,6 @@
 #' @format A data frame with 42 rows and 2 variables:
 #' \describe{
 #'   \item{compound_id}{Descriptive names of forty-two chemical compounds.}
-#'   \item{smile}{The corresponding SMILES strings of the compounds.}
+#'   \item{smile}{The corresponding SMILE of the compounds.}
 #' }
 "chem_smiles"
