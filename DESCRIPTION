@@ -1,0 +1,17 @@
+Package: chemdesr
+Title: Obtain Data from the ChemDes Platform.
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jack",
+           family = "Davison",
+           role = c("aut", "cre"),
+           email = "jd1184@york.ac.uk",
+           comment = c(ORCID = "0000-0003-2653-6615"))
+Description: This package scrapes the ChemDes platform for chemical information.
+License: CC BY 4.0
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    magrittr
