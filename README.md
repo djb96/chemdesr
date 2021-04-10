@@ -2,7 +2,7 @@
 
 ![The chemdesr hex logo](https://github.com/jack-davison/chemdesr/blob/main/logo.png?raw=true)
 
-Functions used to scrape chemical information from the ChemDes platform, more specifically to assist with running the model found at https://dan-wacl.shinyapps.io/rie_shiny_app/.
+Functions used to scrape chemical information from the [ChemDes platform](http://www.scbdd.com/chemdes/), more specifically to assist with running the model found at https://dan-wacl.shinyapps.io/rie_shiny_app/.
 
 To install, type the below code into your R console:
 
