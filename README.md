@@ -1,4 +1,6 @@
-<img src="https://github.com/jack-davison/chemdesr/blob/main/logo.png?raw=true" width="210" align="right">
+<a href="https://github.com/jack-davison/chemdesr">
+  <img src="https://github.com/jack-davison/chemdesr/blob/main/logo.png?raw=true" width="210" align="right">
+</a>
 
 # {chemdesr} 📦
 
