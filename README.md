@@ -1,6 +1,6 @@
-# {chemdesr} 📦
+<img src="https://github.com/jack-davison/chemdesr/blob/main/logo.png?raw=true" width="210" align="right">
 
-![The chemdesr hex logo](https://github.com/jack-davison/chemdesr/blob/main/logo.png?raw=true)
+# {chemdesr} 📦
 
 Functions used to scrape chemical information from the [ChemDes platform](http://www.scbdd.com/chemdes/), more specifically to assist with running the model found at https://dan-wacl.shinyapps.io/rie_shiny_app/.
 
