@@ -4,7 +4,7 @@
 \alias{map_chemdes}
 \title{Map ChemDes}
 \usage{
-map_chemdes(smiles, chatty = F)
+map_chemdes(smiles, chatty = T)
 }
 \arguments{
 \item{smiles}{A vector of simplified molecular-input line-entry system ("SMILES") strings.}
@@ -15,7 +15,7 @@ map_chemdes(smiles, chatty = F)
 A "wide" tibble of chemical information, labelled with the SMILES string.
 }
 \description{
-This function is a wrapper around read_full_chemdes, allowing for a vector of SMILES strings to be mapped over. This function should take roughly 30 seconds per compound.
+This function is a wrapper around \code{read_full_chemdes}, allowing for a vector of SMILES strings to be mapped over. This function should take roughly 30 seconds per compound.
 }
 \author{
 Jack Davison, \email{jd1184@york.ac.uk}

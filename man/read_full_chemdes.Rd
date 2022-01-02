@@ -9,13 +9,18 @@ read_full_chemdes(smile, chatty = F)
 \arguments{
 \item{smile}{A simplified molecular-input line-entry system ("SMILES") string.}
 
-\item{chatty}{TRUE/FALSE. If TRUE, will print messages to the console updating you of the stage of scraping.}
+\item{chatty}{TRUE/FALSE. If TRUE, will print messages to the console
+updating you of the stage of scraping.}
 }
 \value{
 A "wide" tibble of chemical information, labelled with the SMILES string.
 }
 \description{
-This function scrapes all available chemical information from ChemDes, a free web-based platform for the calculation of molecular descriptors and fingerprints. This is effectively just a wrapper around read_chemdes which automatically reads in Chemopy, CDK, RDKit, Pybel, and PaDEL data for the given smiles.
+This function scrapes all available chemical information from
+ChemDes, a free web-based platform for the calculation of molecular
+descriptors and fingerprints. This is effectively just a wrapper around
+\code{read_chemdes} which automatically reads in Chemopy, CDK, RDKit, Pybel,
+and PaDEL data for the given smiles.
 }
 \author{
 Jack Davison, \email{jd1184@york.ac.uk}

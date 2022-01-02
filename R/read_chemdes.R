@@ -1,6 +1,8 @@
 #' Read ChemDes
 #'
-#' @description This function scrapes chemical information from ChemDes, a free web-based platform for the calculation of molecular descriptors and fingerprints.
+#' @description This function scrapes chemical information from ChemDes, a
+#' free web-based platform for the calculation of molecular descriptors and
+#' fingerprints.
 #'
 #' @param smile A simplified molecular-input line-entry system ("SMILES") string.
 #' @param desc The descriptors you wish to scrape. One of "Chemopy", "CDK", "RDKit", "Pybel", or "PaDEL" (not case sensitive).

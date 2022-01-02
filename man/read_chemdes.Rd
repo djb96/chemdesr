@@ -15,7 +15,9 @@ read_chemdes(smile, desc = "chemopy")
 A "wide" tibble of chemical information, labelled with the SMILES string.
 }
 \description{
-This function scrapes chemical information from ChemDes, a free web-based platform for the calculation of molecular descriptors and fingerprints.
+This function scrapes chemical information from ChemDes, a
+free web-based platform for the calculation of molecular descriptors and
+fingerprints.
 }
 \author{
 Jack Davison, \email{jd1184@york.ac.uk}
