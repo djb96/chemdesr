@@ -9,12 +9,12 @@
 #' @return A "wide" tibble of chemical information, labelled with the SMILES string.
 #' @export
 
-map_chemdes = function(smiles, chatty = T){
-
-  df = purrr::map_dfr(.x = smiles,
-                      .f = chemdesr::read_full_chemdes,
-                      chatty = chatty)
+map_chemdes <- function(smiles, chatty = T) {
+  df <- purrr::map_dfr(
+    .x = smiles,
+    .f = chemdesr::read_full_chemdes,
+    chatty = chatty
+  )
 
   return(df)
-
 }

@@ -14,24 +14,33 @@
 #' @return A "wide" tibble of chemical information, labelled with the SMILES string.
 #' @export
 
-read_full_chemdes = function(smile, chatty = F){
+read_full_chemdes <- function(smile, chatty = F) {
+  chemopy <- chemdesr::read_chemdes(smile = smile, desc = "chemopy")
+  if (chatty) {
+    message(paste(smile, "Chemopy Done."))
+  }
 
-  chemopy = chemdesr::read_chemdes(smile = smile, desc = "chemopy")
-  if(chatty){message(paste(smile, "Chemopy Done."))}
+  cdk <- chemdesr::read_chemdes(smile = smile, desc = "cdk")
+  if (chatty) {
+    message(paste(smile, "CDK Done."))
+  }
 
-  cdk = chemdesr::read_chemdes(smile = smile, desc = "cdk")
-  if(chatty){message(paste(smile, "CDK Done."))}
+  rdk <- chemdesr::read_chemdes(smile = smile, desc = "rdk")
+  if (chatty) {
+    message(paste(smile, "RDKit Done."))
+  }
 
-  rdk = chemdesr::read_chemdes(smile = smile, desc = "rdk")
-  if(chatty){message(paste(smile, "RDKit Done."))}
+  pybel <- chemdesr::read_chemdes(smile = smile, desc = "pybel")
+  if (chatty) {
+    message(paste(smile, "Pybel Done."))
+  }
 
-  pybel = chemdesr::read_chemdes(smile = smile, desc = "pybel")
-  if(chatty){message(paste(smile, "Pybel Done."))}
+  padel <- chemdesr::read_chemdes(smile = smile, desc = "padel")
+  if (chatty) {
+    message(paste(smile, "PaDEL Done."))
+  }
 
-  padel = chemdesr::read_chemdes(smile = smile, desc = "padel")
-  if(chatty){message(paste(smile, "PaDEL Done."))}
-
-  all = chemopy %>%
+  all <- chemopy %>%
     dplyr::inner_join(cdk, by = "smile") %>%
     dplyr::inner_join(rdk, by = "smile") %>%
     dplyr::inner_join(pybel, by = "smile") %>%
@@ -39,12 +48,9 @@ read_full_chemdes = function(smile, chatty = F){
     dplyr::relocate(smile) %>%
     dplyr::tibble()
 
-  if(chatty){message(paste(smile, "Data Combined."))}
+  if (chatty) {
+    message(paste(smile, "Data Combined."))
+  }
 
   return(all)
-
 }
-
-
-
-
