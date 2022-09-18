@@ -7,9 +7,10 @@
 #' @param smile A simplified molecular-input line-entry system ("SMILES") string.
 #' @param desc The descriptors you wish to scrape. One of "Chemopy", "CDK", "RDKit", "Pybel", or "PaDEL" (not case sensitive).
 #'
-#' @author Jack Davison, \email{jd1184@@york.ac.uk}
+#' @author Jack Davison, \email{jd1184@york.ac.uk}
 #' @return A "wide" tibble of chemical information, labelled with the SMILES string.
 #' @export
+#' @importFrom rlang .data
 
 read_chemdes <- function(smile, desc = "chemopy") {
   desc <- dplyr::if_else(desc == "RDKit", "rdk", desc)
@@ -24,7 +25,7 @@ read_chemdes <- function(smile, desc = "chemopy") {
   new_sesh <- rvest::session_submit(x = session, form = form)
 
   df <- rvest::html_table(new_sesh)[[1]][2:3] %>%
-    tidyr::pivot_wider(names_from = X2, values_from = X3) %>%
+    tidyr::pivot_wider(names_from = .data$X2, values_from = .data$X3) %>%
     dplyr::mutate(smile = smile)
 
   return(df)

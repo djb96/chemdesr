@@ -4,8 +4,10 @@
 \name{chemdesr-package}
 \alias{chemdesr}
 \alias{chemdesr-package}
-\title{chemdesr: Obtain Data from the ChemDes Platform.}
+\title{chemdesr: Obtain Data from the ChemDes Platform}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 This package scrapes the ChemDes platform for chemical information.
 }
 \author{

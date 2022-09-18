@@ -10,7 +10,7 @@
 #' @param chatty TRUE/FALSE. If TRUE, will print messages to the console
 #' updating you of the stage of scraping.
 #'
-#' @author Jack Davison, \email{jd1184@@york.ac.uk}
+#' @author Jack Davison, \email{jd1184@york.ac.uk}
 #' @return A "wide" tibble of chemical information, labelled with the SMILES string.
 #' @export
 
