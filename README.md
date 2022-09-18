@@ -1,6 +1,4 @@
-# chemdesr <img src="man/figures/logo.png" align="right" height="138" />
-
-# {chemdesr} 📦
+# {chemdesr} 📦 <img src="man/figures/logo.png" align="right" height="138" />
 
 Functions used to scrape chemical information from the [ChemDes platform](http://www.scbdd.com/chemdes/), more specifically to assist with running the model found at https://dan-wacl.shinyapps.io/rie_shiny_app/.
 
